@@ -14,11 +14,4 @@
 
 LOCAL_PATH := $(call my-dir)
 
-LOCAL_PREBUILT_LIBS := \
-	libbfd.a \
-	libiberty.a \
-	libintl.a
-
-LOCAL_MODULE_TAGS := optional
-
-include $(BUILD_HOST_PREBUILT)
+include $(call all-makefiles-under, $(LOCAL_PATH))
