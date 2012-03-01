@@ -1,7 +1,7 @@
-This is doc/gccinstall.info, produced by makeinfo version 4.8 from
-/Volumes/project/toolchain/./src/build/../gcc/gcc-4.6/gcc/doc/install.texi.
+This is doc/gccinstall.info, produced by makeinfo version 4.13 from
+/Volumes/androidtc/androidtoolchain/./src/build/../gcc/gcc-4.6/gcc/doc/install.texi.
 
-   Copyright (C) 1988, 1989, 1992, 1993, 1994, 1995, 1996, 1997, 1998,
+Copyright (C) 1988, 1989, 1992, 1993, 1994, 1995, 1996, 1997, 1998,
 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010
 Free Software Foundation, Inc.
 
@@ -81,7 +81,7 @@ as well as detailing some target specific installation instructions.
 distributions with their own installation instructions.  This document
 supersedes all package specific installation instructions.
 
-   _Before_ starting the build/install procedure please check the *Note
+   _Before_ starting the build/install procedure please check the *note
 host/target specific installation notes: Specific.  We recommend you
 browse the entire generic installation instructions before you proceed.
 
@@ -1466,11 +1466,6 @@ option.
      `--build-id' option, a warning is issued and the
      `--enable-linker-build-id' option is ignored.  The default is off.
 
-`--with-linker-hash-style=CHOICE'
-     Tells GCC to pass `--hash-style=CHOICE' option to the linker for
-     all final links. CHOICE can be one of `sysv', `gnu', and `both'
-     where `sysv' is the default.
-
 `--enable-gnu-unique-object'
 `--disable-gnu-unique-object'
      Tells GCC to use the gnu_unique_object relocation for C++ template
@@ -2469,7 +2464,7 @@ following information:
      build status list will include a link to the archived copy of your
      message.
 
-   We'd also like to know if the *Note host/target specific
+   We'd also like to know if the *note host/target specific
 installation notes: Specific.  didn't include your host/target
 information or if that information is incomplete or out of date.  Send
 a note to <gcc@gcc.gnu.org> detailing how the information should be
@@ -3961,7 +3956,7 @@ main manual.
      irrelevant, and will be ignored.  So you might as well specify the
      version if you know it.
 
-     See *Note Configurations::, for a list of supported configuration
+     See *note Configurations::, for a list of supported configuration
      names and notes on many of the configurations.  You should check
      the notes in that section before proceeding any further with the
      installation of GCC.
@@ -4546,7 +4541,7 @@ Concept Index
 * Menu:
 
 * Binaries:                              Binaries.           (line    6)
-* build_configargs:                      Configuration.      (line 1442)
+* build_configargs:                      Configuration.      (line 1437)
 * Configuration:                         Configuration.      (line    6)
 * configurations supported by GCC:       Configurations.     (line    6)
 * Downloading GCC:                       Downloading the source.
@@ -4556,7 +4551,7 @@ Concept Index
 * FDL, GNU Free Documentation License:   GNU Free Documentation License.
                                                              (line    6)
 * Host specific installation:            Specific.           (line    6)
-* host_configargs:                       Configuration.      (line 1446)
+* host_configargs:                       Configuration.      (line 1441)
 * Installing GCC: Binaries:              Binaries.           (line    6)
 * Installing GCC: Building:              Building.           (line    6)
 * Installing GCC: Configuration:         Configuration.      (line    6)
@@ -4566,96 +4561,96 @@ Concept Index
 * Specific installation notes:           Specific.           (line    6)
 * Target specific installation:          Specific.           (line    6)
 * Target specific installation notes:    Specific.           (line    6)
-* target_configargs:                     Configuration.      (line 1450)
+* target_configargs:                     Configuration.      (line 1445)
 * Testing:                               Testing.            (line    6)
 * Testsuite:                             Testing.            (line    6)
 
 
 
 Tag Table:
-Node: Top1996
-Node: Installing GCC2554
-Node: Prerequisites4069
-Node: Downloading the source14225
-Node: Configuration16162
-Ref: with-gnu-as31464
-Ref: with-as32362
-Ref: with-gnu-ld33775
-Node: Building79992
-Node: Testing95477
-Node: Final install103174
-Node: Binaries108488
-Node: Specific110089
-Ref: alpha-x-x110595
-Ref: alpha-dec-osf51111084
-Ref: arc-x-elf113282
-Ref: arm-x-elf113382
-Ref: avr113602
-Ref: bfin114242
-Ref: cris114484
-Ref: crx115300
-Ref: dos115978
-Ref: x-x-freebsd116301
-Ref: h8300-hms118138
-Ref: hppa-hp-hpux118490
-Ref: hppa-hp-hpux10120861
-Ref: hppa-hp-hpux11121274
-Ref: x-x-linux-gnu126933
-Ref: ix86-x-linux127126
-Ref: ix86-x-solaris289127439
-Ref: ix86-x-solaris210128283
-Ref: ia64-x-linux129509
-Ref: ia64-x-hpux130279
-Ref: x-ibm-aix130834
-Ref: iq2000-x-elf137072
-Ref: lm32-x-elf137212
-Ref: lm32-x-uclinux137316
-Ref: m32c-x-elf137444
-Ref: m32r-x-elf137546
-Ref: m6811-elf137648
-Ref: m6812-elf137798
-Ref: m68k-x-x137948
-Ref: m68k-x-uclinux138920
-Ref: mep-x-elf139283
-Ref: microblaze-x-elf139393
-Ref: mips-x-x139512
-Ref: mips-sgi-irix5142189
-Ref: mips-sgi-irix6142269
-Ref: moxie-x-elf145337
-Ref: powerpc-x-x145457
-Ref: powerpc-x-darwin145662
-Ref: powerpc-x-elf146156
-Ref: powerpc-x-linux-gnu146241
-Ref: powerpc-x-netbsd146336
-Ref: powerpc-x-eabisim146424
-Ref: powerpc-x-eabi146550
-Ref: powerpcle-x-elf146626
-Ref: powerpcle-x-eabisim146718
-Ref: powerpcle-x-eabi146851
-Ref: rx-x-elf146934
-Ref: s390-x-linux147133
-Ref: s390x-x-linux147205
-Ref: s390x-ibm-tpf147292
-Ref: x-x-solaris2147423
-Ref: sparc-x-x152571
-Ref: sparc-sun-solaris2153073
-Ref: sparc-sun-solaris210155827
-Ref: sparc-x-linux156203
-Ref: sparc64-x-solaris2156428
-Ref: sparcv9-x-solaris2157064
-Ref: x-x-vxworks157151
-Ref: x86-64-x-x158673
-Ref: xtensa-x-elf159001
-Ref: xtensa-x-linux159672
-Ref: windows160013
-Ref: x-x-cygwin161970
-Ref: x-x-interix162523
-Ref: x-x-mingw32162832
-Ref: older163058
-Ref: elf165175
-Node: Old165433
-Node: Configurations168570
-Node: GNU Free Documentation License172552
-Node: Concept Index197699
+Node: Top2003
+Node: Installing GCC2561
+Node: Prerequisites4076
+Node: Downloading the source14232
+Node: Configuration16169
+Ref: with-gnu-as31471
+Ref: with-as32369
+Ref: with-gnu-ld33782
+Node: Building79791
+Node: Testing95276
+Node: Final install102973
+Node: Binaries108287
+Node: Specific109888
+Ref: alpha-x-x110394
+Ref: alpha-dec-osf51110883
+Ref: arc-x-elf113081
+Ref: arm-x-elf113181
+Ref: avr113401
+Ref: bfin114041
+Ref: cris114283
+Ref: crx115099
+Ref: dos115777
+Ref: x-x-freebsd116100
+Ref: h8300-hms117937
+Ref: hppa-hp-hpux118289
+Ref: hppa-hp-hpux10120660
+Ref: hppa-hp-hpux11121073
+Ref: x-x-linux-gnu126732
+Ref: ix86-x-linux126925
+Ref: ix86-x-solaris289127238
+Ref: ix86-x-solaris210128082
+Ref: ia64-x-linux129308
+Ref: ia64-x-hpux130078
+Ref: x-ibm-aix130633
+Ref: iq2000-x-elf136871
+Ref: lm32-x-elf137011
+Ref: lm32-x-uclinux137115
+Ref: m32c-x-elf137243
+Ref: m32r-x-elf137345
+Ref: m6811-elf137447
+Ref: m6812-elf137597
+Ref: m68k-x-x137747
+Ref: m68k-x-uclinux138719
+Ref: mep-x-elf139082
+Ref: microblaze-x-elf139192
+Ref: mips-x-x139311
+Ref: mips-sgi-irix5141988
+Ref: mips-sgi-irix6142068
+Ref: moxie-x-elf145136
+Ref: powerpc-x-x145256
+Ref: powerpc-x-darwin145461
+Ref: powerpc-x-elf145955
+Ref: powerpc-x-linux-gnu146040
+Ref: powerpc-x-netbsd146135
+Ref: powerpc-x-eabisim146223
+Ref: powerpc-x-eabi146349
+Ref: powerpcle-x-elf146425
+Ref: powerpcle-x-eabisim146517
+Ref: powerpcle-x-eabi146650
+Ref: rx-x-elf146733
+Ref: s390-x-linux146932
+Ref: s390x-x-linux147004
+Ref: s390x-ibm-tpf147091
+Ref: x-x-solaris2147222
+Ref: sparc-x-x152370
+Ref: sparc-sun-solaris2152872
+Ref: sparc-sun-solaris210155626
+Ref: sparc-x-linux156002
+Ref: sparc64-x-solaris2156227
+Ref: sparcv9-x-solaris2156863
+Ref: x-x-vxworks156950
+Ref: x86-64-x-x158472
+Ref: xtensa-x-elf158800
+Ref: xtensa-x-linux159471
+Ref: windows159812
+Ref: x-x-cygwin161769
+Ref: x-x-interix162322
+Ref: x-x-mingw32162631
+Ref: older162857
+Ref: elf164974
+Node: Old165232
+Node: Configurations168369
+Node: GNU Free Documentation License172351
+Node: Concept Index197498
 
 End Tag Table

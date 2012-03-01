@@ -1,7 +1,7 @@
 #include "configargs.h"
 
 static char basever[] = "4.6.x-google";
-static char datestamp[] = "20110718";
+static char datestamp[] = "20120106";
 static char devphase[] = "prerelease";
 static char revision[] = "";
 

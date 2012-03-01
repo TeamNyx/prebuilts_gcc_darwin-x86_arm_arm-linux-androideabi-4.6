@@ -1,7 +1,7 @@
-This is binutils.info, produced by makeinfo version 4.8 from
-/Volumes/project/toolchain/./src/build/../binutils/binutils-2.21/binutils/doc/binutils.texi.
+This is binutils.info, produced by makeinfo version 4.13 from
+/Volumes/androidtc/androidtoolchain/./src/build/../binutils/binutils-2.21/binutils/doc/binutils.texi.
 
-   Copyright (C) 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
+Copyright (C) 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
 Software Foundation, Inc.
 
@@ -553,7 +553,7 @@ object files are listed as arguments, `nm' assumes the file `a.out'.
           same name.  If the symbol is defined anywhere, the common
           symbols are treated as undefined references.  For more
           details on common symbols, see the discussion of -warn-common
-          in *Note Linker options: (ld.info)Options.
+          in *note Linker options: (ld.info)Options.
 
     `D'
     `d'
@@ -630,7 +630,7 @@ object files are listed as arguments, `nm' assumes the file `a.out'.
           this case, the next values printed are the stabs other field,
           the stabs desc field, and the stab type.  Stabs symbols are
           used to hold debugging information.  For more information,
-          see *Note Stabs: (stabs.info)Top.
+          see *note Stabs: (stabs.info)Top.
 
     `?'
           The symbol type is unknown, or object file format specific.
@@ -685,8 +685,8 @@ equivalent.
 
 `--plugin NAME'
      Load the plugin called NAME to add support for extra target types.
-     This option is only available if the toolchain has been built
-     with plugin support enabled.
+     This option is only available if the toolchain has been built with
+     plugin support enabled.
 
 `-l'
 `--line-numbers'
@@ -1849,7 +1849,7 @@ equivalent.  At least one option from the list
      ELF section.  In most other file formats, debugging symbol-table
      entries are interleaved with linkage symbols, and are visible in
      the `--syms' output.  For more information on stabs symbols, see
-     *Note Stabs: (stabs.info)Top.
+     *note Stabs: (stabs.info)Top.
 
 `--start-address=ADDRESS'
      Start displaying data at the specified address.  This affects the
@@ -2627,7 +2627,7 @@ file language used in header files, see the `linkers' section,
 `NLMLINK' in particular, of the `NLM Development and Tools Overview',
 which is part of the NLM Software Developer's Kit ("NLM SDK"),
 available from Novell, Inc.  `nlmconv' uses the GNU Binary File
-Descriptor library to read INFILE; see *Note BFD: (ld.info)BFD, for
+Descriptor library to read INFILE; see *note BFD: (ld.info)BFD, for
 more information.
 
    `nlmconv' can perform a link step.  In other words, you can list
@@ -2749,7 +2749,7 @@ Compiler.
      Specify the BFD format to use for a bin file as output.  This is a
      BFD target name; you can use the `--help' option to see a list of
      supported targets.  Normally `windmc' will use the default format,
-     which is the first one listed by the `--help' option.  *Note
+     which is the first one listed by the `--help' option.  *note
      Target Selection::.
 
 `-h PATH'
@@ -2901,7 +2901,7 @@ available to Windows.
      This is a BFD target name; you can use the `--help' option to see
      a list of supported targets.  Normally `windres' will use the
      default format, which is the first one listed by the `--help'
-     option.  *Note Target Selection::.
+     option.  *note Target Selection::.
 
 `--preprocessor PROGRAM'
      When `windres' reads an `rc' file, it runs it through the C
@@ -3448,9 +3448,8 @@ equivalent.  At least one option besides `-v' or `-H' must be given.
 `-u'
 `--unwind'
      Displays the contents of the file's unwind section, if it has one.
-     Only the unwind sections for IA64 ELF files, as well as ARM
-     unwind tables (`.ARM.exidx' / `.ARM.extab') are currently
-     supported.
+     Only the unwind sections for IA64 ELF files, as well as ARM unwind
+     tables (`.ARM.exidx' / `.ARM.extab') are currently supported.
 
 `-d'
 `--dynamic'
@@ -4469,7 +4468,7 @@ Binutils Index
 * architecture:                          objdump.             (line 195)
 * architectures available:               objdump.             (line 180)
 * archive contents:                      ranlib.              (line   6)
-* Archive file symbol index information: readelf.             (line 153)
+* Archive file symbol index information: readelf.             (line 152)
 * archive headers:                       objdump.             (line  65)
 * archives:                              ar.                  (line   6)
 * base files:                            dlltool.             (line 124)
@@ -4510,7 +4509,7 @@ Binutils Index
 * dynamic relocation entries, in object file: objdump.        (line 325)
 * dynamic symbol table entries, printing: objdump.            (line 476)
 * dynamic symbols:                       nm.                  (line 161)
-* ELF dynamic section information:       readelf.             (line 111)
+* ELF dynamic section information:       readelf.             (line 110)
 * ELF dynamic symbol table information:  readelf.             (line  86)
 * ELF file header information:           readelf.             (line  55)
 * ELF file information:                  readelf.             (line   6)
@@ -4522,7 +4521,7 @@ Binutils Index
 * ELF section information:               readelf.             (line  67)
 * ELF segment information:               readelf.             (line  61)
 * ELF symbol table information:          readelf.             (line  82)
-* ELF version sections informations:     readelf.             (line 115)
+* ELF version sections informations:     readelf.             (line 114)
 * elfedit:                               elfedit.             (line   6)
 * endianness:                            objdump.             (line 135)
 * error on valid input:                  Bug Criteria.        (line  12)
@@ -4613,35 +4612,35 @@ Binutils Index
 
 
 Tag Table:
-Node: Top2083
-Node: ar3793
-Node: ar cmdline6598
-Node: ar scripts15922
-Node: nm21610
-Node: objcopy31084
-Node: objdump60692
-Node: ranlib81364
-Node: size82185
-Node: strings85190
-Node: strip87648
-Node: c++filt93599
-Ref: c++filt-Footnote-198446
-Node: addr2line98552
-Node: nlmconv102352
-Node: windmc104958
-Node: windres108607
-Node: dlltool114634
-Node: def file format127520
-Node: readelf129451
-Node: elfedit136036
-Node: Common Options138256
-Node: Selecting the Target System139296
-Node: Target Selection140228
-Node: Architecture Selection142210
-Node: Reporting Bugs143038
-Node: Bug Criteria143817
-Node: Bug Reporting144370
-Node: GNU Free Documentation License151240
-Node: Binutils Index176419
+Node: Top2090
+Node: ar3800
+Node: ar cmdline6605
+Node: ar scripts15929
+Node: nm21617
+Node: objcopy31091
+Node: objdump60699
+Node: ranlib81371
+Node: size82192
+Node: strings85197
+Node: strip87655
+Node: c++filt93606
+Ref: c++filt-Footnote-198453
+Node: addr2line98559
+Node: nlmconv102359
+Node: windmc104965
+Node: windres108614
+Node: dlltool114641
+Node: def file format127527
+Node: readelf129458
+Node: elfedit136038
+Node: Common Options138258
+Node: Selecting the Target System139298
+Node: Target Selection140230
+Node: Architecture Selection142212
+Node: Reporting Bugs143040
+Node: Bug Criteria143819
+Node: Bug Reporting144372
+Node: GNU Free Documentation License151242
+Node: Binutils Index176421
 
 End Tag Table

@@ -254,6 +254,7 @@ enum gt_types_enum {
  gt_ggc_e_18VEC_dcall_entry_gc,
  gt_ggc_e_20VEC_dcall_entry_base,
  gt_ggc_e_12dcall_struct,
+ gt_ggc_e_22cached_dw_loc_list_def,
  gt_ggc_e_16var_loc_list_def,
  gt_ggc_e_12var_loc_node,
  gt_ggc_e_20VEC_die_arg_entry_gc,
@@ -662,6 +663,7 @@ enum gt_types_enum {
  gt_e_P18saved_module_scope4htab,
  gt_e_SP9tree_node12splay_tree_s,
  gt_e_P10vcall_insn4htab,
+ gt_e_P22cached_dw_loc_list_def4htab,
  gt_e_P16var_loc_list_def4htab,
  gt_e_P10die_struct4htab,
  gt_e_P15dwarf_file_data4htab,
@@ -2545,6 +2547,14 @@ enum gt_types_enum {
 #define ggc_alloc_zone_cleared_dcall_struct(z) ((struct dcall_struct *)(ggc_internal_zone_cleared_alloc_stat (z, sizeof (struct dcall_struct) MEM_STAT_INFO)))
 #define ggc_alloc_zone_vec_dcall_struct(n, z) ((struct dcall_struct *)(ggc_internal_zone_vec_alloc_stat (z, sizeof (struct dcall_struct), n MEM_STAT_INFO)))
 #define ggc_alloc_zone_cleared_vec_dcall_struct(n, z) ((struct dcall_struct *)(ggc_internal_zone_cleared_vec_alloc_stat (z, sizeof (struct dcall_struct), n MEM_STAT_INFO)))
+#define ggc_alloc_cached_dw_loc_list_def() ((struct cached_dw_loc_list_def *)(ggc_internal_alloc_stat (sizeof (struct cached_dw_loc_list_def) MEM_STAT_INFO)))
+#define ggc_alloc_cleared_cached_dw_loc_list_def() ((struct cached_dw_loc_list_def *)(ggc_internal_cleared_alloc_stat (sizeof (struct cached_dw_loc_list_def) MEM_STAT_INFO)))
+#define ggc_alloc_vec_cached_dw_loc_list_def(n) ((struct cached_dw_loc_list_def *)(ggc_internal_vec_alloc_stat (sizeof (struct cached_dw_loc_list_def), n MEM_STAT_INFO)))
+#define ggc_alloc_cleared_vec_cached_dw_loc_list_def(n) ((struct cached_dw_loc_list_def *)(ggc_internal_cleared_vec_alloc_stat (sizeof (struct cached_dw_loc_list_def), n MEM_STAT_INFO)))
+#define ggc_alloc_zone_cached_dw_loc_list_def(z) ((struct cached_dw_loc_list_def *)(ggc_internal_zone_alloc_stat (z, sizeof (struct cached_dw_loc_list_def) MEM_STAT_INFO)))
+#define ggc_alloc_zone_cleared_cached_dw_loc_list_def(z) ((struct cached_dw_loc_list_def *)(ggc_internal_zone_cleared_alloc_stat (z, sizeof (struct cached_dw_loc_list_def) MEM_STAT_INFO)))
+#define ggc_alloc_zone_vec_cached_dw_loc_list_def(n, z) ((struct cached_dw_loc_list_def *)(ggc_internal_zone_vec_alloc_stat (z, sizeof (struct cached_dw_loc_list_def), n MEM_STAT_INFO)))
+#define ggc_alloc_zone_cleared_vec_cached_dw_loc_list_def(n, z) ((struct cached_dw_loc_list_def *)(ggc_internal_zone_cleared_vec_alloc_stat (z, sizeof (struct cached_dw_loc_list_def), n MEM_STAT_INFO)))
 #define ggc_alloc_var_loc_list_def() ((struct var_loc_list_def *)(ggc_internal_alloc_stat (sizeof (struct var_loc_list_def) MEM_STAT_INFO)))
 #define ggc_alloc_cleared_var_loc_list_def() ((struct var_loc_list_def *)(ggc_internal_cleared_alloc_stat (sizeof (struct var_loc_list_def) MEM_STAT_INFO)))
 #define ggc_alloc_vec_var_loc_list_def(n) ((struct var_loc_list_def *)(ggc_internal_vec_alloc_stat (sizeof (struct var_loc_list_def), n MEM_STAT_INFO)))
@@ -5829,6 +5839,13 @@ enum gt_types_enum {
 #define ggc_alloc_zone_dcall_entry(z) ((dcall_entry *)(ggc_internal_zone_alloc_stat (z, sizeof (dcall_entry) MEM_STAT_INFO)))
 #define ggc_alloc_zone_cleared_dcall_entry(z) ((dcall_entry *)(ggc_internal_zone_cleared_alloc_stat (z, sizeof (dcall_entry) MEM_STAT_INFO)))
 #define ggc_alloc_zone_cleared_vec_dcall_entry(n, z) ((dcall_entry *)(ggc_internal_zone_cleared_vec_alloc_stat (z, sizeof (dcall_entry), n MEM_STAT_INFO)))
+#define ggc_alloc_cached_dw_loc_list() ((cached_dw_loc_list *)(ggc_internal_alloc_stat (sizeof (cached_dw_loc_list) MEM_STAT_INFO)))
+#define ggc_alloc_cleared_cached_dw_loc_list() ((cached_dw_loc_list *)(ggc_internal_cleared_alloc_stat (sizeof (cached_dw_loc_list) MEM_STAT_INFO)))
+#define ggc_alloc_vec_cached_dw_loc_list(n) ((cached_dw_loc_list *)(ggc_internal_vec_alloc_stat (sizeof (cached_dw_loc_list), n MEM_STAT_INFO)))
+#define ggc_alloc_cleared_vec_cached_dw_loc_list(n) ((cached_dw_loc_list *)(ggc_internal_cleared_vec_alloc_stat (sizeof (cached_dw_loc_list), n MEM_STAT_INFO)))
+#define ggc_alloc_zone_cached_dw_loc_list(z) ((cached_dw_loc_list *)(ggc_internal_zone_alloc_stat (z, sizeof (cached_dw_loc_list) MEM_STAT_INFO)))
+#define ggc_alloc_zone_cleared_cached_dw_loc_list(z) ((cached_dw_loc_list *)(ggc_internal_zone_cleared_alloc_stat (z, sizeof (cached_dw_loc_list) MEM_STAT_INFO)))
+#define ggc_alloc_zone_cleared_vec_cached_dw_loc_list(n, z) ((cached_dw_loc_list *)(ggc_internal_zone_cleared_vec_alloc_stat (z, sizeof (cached_dw_loc_list), n MEM_STAT_INFO)))
 #define ggc_alloc_var_loc_list() ((var_loc_list *)(ggc_internal_alloc_stat (sizeof (var_loc_list) MEM_STAT_INFO)))
 #define ggc_alloc_cleared_var_loc_list() ((var_loc_list *)(ggc_internal_cleared_alloc_stat (sizeof (var_loc_list) MEM_STAT_INFO)))
 #define ggc_alloc_vec_var_loc_list(n) ((var_loc_list *)(ggc_internal_vec_alloc_stat (sizeof (var_loc_list), n MEM_STAT_INFO)))
@@ -6744,6 +6761,10 @@ extern void gt_ggc_mx_VEC_vcall_entry_gc (void *);
   if (X != NULL) gt_ggc_mx_VEC_dcall_entry_gc (X);\
   } while (0)
 extern void gt_ggc_mx_VEC_dcall_entry_gc (void *);
+#define gt_ggc_m_22cached_dw_loc_list_def(X) do { \
+  if (X != NULL) gt_ggc_mx_cached_dw_loc_list_def (X);\
+  } while (0)
+extern void gt_ggc_mx_cached_dw_loc_list_def (void *);
 #define gt_ggc_m_16var_loc_list_def(X) do { \
   if (X != NULL) gt_ggc_mx_var_loc_list_def (X);\
   } while (0)
@@ -7198,6 +7219,7 @@ extern void gt_ggc_m_P8type_ent4htab (void *);
 extern void gt_ggc_m_P18saved_module_scope4htab (void *);
 extern void gt_ggc_m_SP9tree_node12splay_tree_s (void *);
 extern void gt_ggc_m_P10vcall_insn4htab (void *);
+extern void gt_ggc_m_P22cached_dw_loc_list_def4htab (void *);
 extern void gt_ggc_m_P16var_loc_list_def4htab (void *);
 extern void gt_ggc_m_P10die_struct4htab (void *);
 extern void gt_ggc_m_P15dwarf_file_data4htab (void *);
@@ -7597,6 +7619,10 @@ extern void gt_pch_nx_VEC_vcall_entry_gc (void *);
   if (X != NULL) gt_pch_nx_VEC_dcall_entry_gc (X);\
   } while (0)
 extern void gt_pch_nx_VEC_dcall_entry_gc (void *);
+#define gt_pch_n_22cached_dw_loc_list_def(X) do { \
+  if (X != NULL) gt_pch_nx_cached_dw_loc_list_def (X);\
+  } while (0)
+extern void gt_pch_nx_cached_dw_loc_list_def (void *);
 #define gt_pch_n_16var_loc_list_def(X) do { \
   if (X != NULL) gt_pch_nx_var_loc_list_def (X);\
   } while (0)
@@ -8051,6 +8077,7 @@ extern void gt_pch_n_P8type_ent4htab (void *);
 extern void gt_pch_n_P18saved_module_scope4htab (void *);
 extern void gt_pch_n_SP9tree_node12splay_tree_s (void *);
 extern void gt_pch_n_P10vcall_insn4htab (void *);
+extern void gt_pch_n_P22cached_dw_loc_list_def4htab (void *);
 extern void gt_pch_n_P16var_loc_list_def4htab (void *);
 extern void gt_pch_n_P10die_struct4htab (void *);
 extern void gt_pch_n_P15dwarf_file_data4htab (void *);
@@ -8258,6 +8285,8 @@ extern void gt_pch_p_10vcall_insn
 extern void gt_pch_p_18VEC_vcall_entry_gc
     (void *, void *, gt_pointer_operator, void *);
 extern void gt_pch_p_18VEC_dcall_entry_gc
+    (void *, void *, gt_pointer_operator, void *);
+extern void gt_pch_p_22cached_dw_loc_list_def
     (void *, void *, gt_pointer_operator, void *);
 extern void gt_pch_p_16var_loc_list_def
     (void *, void *, gt_pointer_operator, void *);
@@ -8542,6 +8571,8 @@ extern void gt_pch_p_SP9tree_node12splay_tree_s
     (void *, void *, gt_pointer_operator, void *);
 extern void gt_pch_p_P10vcall_insn4htab
     (void *, void *, gt_pointer_operator, void *);
+extern void gt_pch_p_P22cached_dw_loc_list_def4htab
+    (void *, void *, gt_pointer_operator, void *);
 extern void gt_pch_p_P16var_loc_list_def4htab
     (void *, void *, gt_pointer_operator, void *);
 extern void gt_pch_p_P10die_struct4htab
@@ -8610,6 +8641,7 @@ extern void * ggc_alloc_splay_tree_type_ent_htab (int, void *);
 extern void * ggc_alloc_splay_tree_saved_module_scope_htab (int, void *);
 extern void * ggc_alloc_splay_tree_str_tree_node_splay_tree_s (int, void *);
 extern void * ggc_alloc_splay_tree_vcall_insn_htab (int, void *);
+extern void * ggc_alloc_splay_tree_cached_dw_loc_list_def_htab (int, void *);
 extern void * ggc_alloc_splay_tree_var_loc_list_def_htab (int, void *);
 extern void * ggc_alloc_splay_tree_die_struct_htab (int, void *);
 extern void * ggc_alloc_splay_tree_dwarf_file_data_htab (int, void *);

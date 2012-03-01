@@ -1,32 +1,45 @@
 Sources for this prebuilt toolchain can be downloaded from Android Opensource
 Project GIT repository git://android.googlesource.com/toolchain.
 
+Configure options:
+export CC="gcc -m32 -isystem /Developer/SDKs/MacOSX10.4u.sdk/usr/include -mmacosx-version-min=10.4 -Wno-format -Wno-deprecated-declarations"
+export CXX="g++ -m32 -isystem /Developer/SDKs/MacOSX10.4u.sdk/usr/include -mmacosx-version-min=10.4 -Wno-format -Wno-deprecated-declarations"
+export ABI=32
+export LDFLAGS=-Wl,-syslibroot,/Developer/SDKs/MacOSX10.4u.sdk
+path/to/build/configure --target=arm-linux-androideabi \
+    --host=i686-apple-darwin --build=i686-apple-darwin \
+    --with-gcc-version=4.6     --with-binutils-version=2.21 \
+    --with-gmp-version=4.2.4     --with-mpfr-version=2.4.1 \
+    --with-gdb-version=7.1.x     --with-arch=armv5te \
+    --with-sysroot=[ics generic sysroot] \
+    --with-gold-version=2.21 --enable-gold=default
+
 gcc/ synced to
-	commit 40d7cd0fd78fe2004e2a53c4618c148339b02733
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Mon Dec 19 16:56:54 2011 -0800
+       commit 280e401df2f62bb7a18b03d9b5dcf49cb47446d6
+       Author: Jing Yu <jingyu@google.com>
+       Date:   Thu Mar 1 13:39:20 2012 -0800
 
 binutils/ synced to
-	commit cf3cdbf8b3cda61a619299e7966a83df66244036
+	commit d5d495ac8d60e791eab3c6efe795b5c9cff91e33
 	Author: Jing Yu <jingyu@google.com>
-	Date:   Tue Dec 20 10:27:58 2011 -0800
+	Date:   Wed Feb 15 16:11:53 2012 -0800
 
 gdb/ synced to
-	commit 5f9d38fd85e779aa1fd17eb38d24f8ec994d9147
-	Author: Doug Kwan <dougkwan@google.com>
-	Date:   Wed Aug 31 15:31:16 2011 -0700
+        commit d3fbc74c42021bf9d385a3d3b8813d0d91318137
+        Author: Jing Yu <jingyu@google.com>
+        Date:   Wed Feb 15 16:23:30 2012 -0800
 
 gmp/ synced to
-	commit 9fb242a79dd122d7fbf867daf5620dba6927bd2e
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Nov 5 17:43:59 2009 -0800
+        commit 9fb242a79dd122d7fbf867daf5620dba6927bd2e
+        Author: Jing Yu <jingyu@google.com>
+        Date:   Thu Nov 5 17:43:59 2009 -0800
 
 mpfr/ synced to
-	commit da6dfde986af1b56f0f41e9f5de61d093fa8af90
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Nov 5 17:50:13 2009 -0800
+        commit da6dfde986af1b56f0f41e9f5de61d093fa8af90
+        Author: Jing Yu <jingyu@google.com>
+        Date:   Thu Nov 5 17:50:13 2009 -0800
 
 build/ synced to
-	commit 84b232badae3b50c749d37e81506ce2f3b0edefd
-	Author: Jing Yu <jingyu@google.com>
-	Date:   Tue Dec 20 17:01:04 2011 -0800
+        commit 5ef7fa6f214e96660a9b16343fea904831e5e6e2
+        Author: Jing Yu <jingyu@google.com>
+        Date:   Wed Feb 15 16:03:22 2012 -0800
