@@ -1,5 +1,5 @@
 This is stabs.info, produced by makeinfo version 4.13 from
-/Volumes/androidtc/androidtoolchain/./src/build/../gdb/gdb-7.1.x/gdb/doc/stabs.texinfo.
+/Volumes/androidtc/androidtoolchain/./src/build/../gdb/gdb-7.3.x/gdb/doc/stabs.texinfo.
 
 INFO-DIR-SECTION Software development
 START-INFO-DIR-ENTRY
@@ -7,12 +7,12 @@ START-INFO-DIR-ENTRY
 END-INFO-DIR-ENTRY
 
    Copyright (C) 1992, 1993, 1994, 1995, 1997, 1998, 2000, 2001, 2002,
-2003, 2004, 2005, 2006, 2007, 2009, 2010 Free Software Foundation, Inc.
-Contributed by Cygnus Support.  Written by Julia Menapace, Jim Kingdon,
-and David MacKenzie.
+2003, 2004, 2005, 2006, 2007, 2009, 2010, 2011 Free Software
+Foundation, Inc.  Contributed by Cygnus Support.  Written by Julia
+Menapace, Jim Kingdon, and David MacKenzie.
 
    Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.1 or
+under the terms of the GNU Free Documentation License, Version 1.3 or
 any later version published by the Free Software Foundation; with no
 Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
 Texts.  A copy of the license is included in the section entitled "GNU
@@ -21,12 +21,12 @@ Free Documentation License".
    This document describes the stabs debugging symbol tables.
 
    Copyright (C) 1992, 1993, 1994, 1995, 1997, 1998, 2000, 2001, 2002,
-2003, 2004, 2005, 2006, 2007, 2009, 2010 Free Software Foundation, Inc.
-Contributed by Cygnus Support.  Written by Julia Menapace, Jim Kingdon,
-and David MacKenzie.
+2003, 2004, 2005, 2006, 2007, 2009, 2010, 2011 Free Software
+Foundation, Inc.  Contributed by Cygnus Support.  Written by Julia
+Menapace, Jim Kingdon, and David MacKenzie.
 
    Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.1 or
+under the terms of the GNU Free Documentation License, Version 1.3 or
 any later version published by the Free Software Foundation; with no
 Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
 Texts.  A copy of the license is included in the section entitled "GNU
@@ -3926,10 +3926,10 @@ File: stabs.info,  Node: GNU Free Documentation License,  Prev: Symbol Types Ind
 Appendix G GNU Free Documentation License
 *****************************************
 
-                      Version 1.2, November 2002
+                     Version 1.3, 3 November 2008
 
-     Copyright (C) 2000,2001,2002 Free Software Foundation, Inc.
-     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+     Copyright (C) 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+     `http://fsf.org/'
 
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
@@ -4030,6 +4030,9 @@ Appendix G GNU Free Documentation License
      works in formats which do not have any title page as such, "Title
      Page" means the text near the most prominent appearance of the
      work's title, preceding the beginning of the body of the text.
+
+     The "publisher" means any person or entity that distributes copies
+     of the Document to the public.
 
      A section "Entitled XYZ" means a named subunit of the Document
      whose title either is precisely XYZ or contains XYZ in parentheses
@@ -4296,12 +4299,29 @@ Appendix G GNU Free Documentation License
   9. TERMINATION
 
      You may not copy, modify, sublicense, or distribute the Document
-     except as expressly provided for under this License.  Any other
-     attempt to copy, modify, sublicense or distribute the Document is
-     void, and will automatically terminate your rights under this
-     License.  However, parties who have received copies, or rights,
-     from you under this License will not have their licenses
-     terminated so long as such parties remain in full compliance.
+     except as expressly provided under this License.  Any attempt
+     otherwise to copy, modify, sublicense, or distribute it is void,
+     and will automatically terminate your rights under this License.
+
+     However, if you cease all violation of this License, then your
+     license from a particular copyright holder is reinstated (a)
+     provisionally, unless and until the copyright holder explicitly
+     and finally terminates your license, and (b) permanently, if the
+     copyright holder fails to notify you of the violation by some
+     reasonable means prior to 60 days after the cessation.
+
+     Moreover, your license from a particular copyright holder is
+     reinstated permanently if the copyright holder notifies you of the
+     violation by some reasonable means, this is the first time you have
+     received notice of violation of this License (for any work) from
+     that copyright holder, and you cure the violation prior to 30 days
+     after your receipt of the notice.
+
+     Termination of your rights under this section does not terminate
+     the licenses of parties who have received copies or rights from
+     you under this License.  If your rights have been terminated and
+     not permanently reinstated, receipt of a copy of some or all of
+     the same material does not give you any rights to use it.
 
  10. FUTURE REVISIONS OF THIS LICENSE
 
@@ -4319,10 +4339,44 @@ Appendix G GNU Free Documentation License
      published (not as a draft) by the Free Software Foundation.  If
      the Document does not specify a version number of this License,
      you may choose any version ever published (not as a draft) by the
-     Free Software Foundation.
+     Free Software Foundation.  If the Document specifies that a proxy
+     can decide which future versions of this License can be used, that
+     proxy's public statement of acceptance of a version permanently
+     authorizes you to choose that version for the Document.
 
-G.1 ADDENDUM: How to use this License for your documents
-========================================================
+ 11. RELICENSING
+
+     "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
+     World Wide Web server that publishes copyrightable works and also
+     provides prominent facilities for anybody to edit those works.  A
+     public wiki that anybody can edit is an example of such a server.
+     A "Massive Multiauthor Collaboration" (or "MMC") contained in the
+     site means any set of copyrightable works thus published on the MMC
+     site.
+
+     "CC-BY-SA" means the Creative Commons Attribution-Share Alike 3.0
+     license published by Creative Commons Corporation, a not-for-profit
+     corporation with a principal place of business in San Francisco,
+     California, as well as future copyleft versions of that license
+     published by that same organization.
+
+     "Incorporate" means to publish or republish a Document, in whole or
+     in part, as part of another Document.
+
+     An MMC is "eligible for relicensing" if it is licensed under this
+     License, and if all works that were first published under this
+     License somewhere other than this MMC, and subsequently
+     incorporated in whole or in part into the MMC, (1) had no cover
+     texts or invariant sections, and (2) were thus incorporated prior
+     to November 1, 2008.
+
+     The operator of an MMC Site may republish an MMC contained in the
+     site under CC-BY-SA on the same site at any time before August 1,
+     2009, provided the MMC is eligible for relicensing.
+
+
+ADDENDUM: How to use this License for your documents
+====================================================
 
 To use this License in a document you have written, include a copy of
 the License in the document and put the following copyright and license
@@ -4330,7 +4384,7 @@ notices just after the title page:
 
        Copyright (C)  YEAR  YOUR NAME.
        Permission is granted to copy, distribute and/or modify this document
-       under the terms of the GNU Free Documentation License, Version 1.2
+       under the terms of the GNU Free Documentation License, Version 1.3
        or any later version published by the Free Software Foundation;
        with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
        Texts.  A copy of the license is included in the section entitled ``GNU
@@ -4439,98 +4493,98 @@ Symbol Types Index
 
 
 Tag Table:
-Node: Top1606
-Node: Overview2653
-Node: Flow4068
-Node: Stabs Format5594
-Node: String Field7156
-Node: C Example12587
-Node: Assembly Code13132
-Node: Program Structure15103
-Node: Main Program15829
-Node: Source Files16390
-Node: Include Files18842
-Node: Line Numbers21507
-Node: Procedures23041
-Node: Nested Procedures28931
-Node: Block Structure30107
-Node: Alternate Entry Points31513
-Node: Constants32246
-Node: Variables35358
-Node: Stack Variables36046
-Node: Global Variables37747
-Node: Register Variables38903
-Node: Common Blocks39725
-Node: Statics40979
-Node: Based Variables43558
-Node: Parameters44943
-Node: Register Parameters46555
-Node: Local Variable Parameters48816
-Node: Reference Parameters51731
-Node: Conformant Arrays52351
-Node: Types53068
-Node: Builtin Types54015
-Node: Traditional Builtin Types55161
-Node: Traditional Integer Types55562
-Node: Traditional Other Types57870
-Node: Builtin Type Descriptors58784
-Node: Negative Type Numbers62284
-Node: Miscellaneous Types68639
-Node: Cross-References70525
-Node: Subranges72200
-Node: Arrays73439
-Node: Strings76664
-Node: Enumerations77726
-Node: Structures80111
-Node: Typedefs82818
-Node: Unions84142
-Node: Function Types85723
-Node: Macro define and undefine87305
-Node: Symbol Tables88882
-Node: Symbol Table Format89334
-Node: Transformations On Symbol Tables90782
-Node: Transformations On Static Variables92136
-Node: Transformations On Global Variables92872
-Node: Stab Section Transformations94115
-Node: Cplusplus95498
-Node: Class Names96081
-Node: Nested Symbols96826
-Node: Basic Cplusplus Types97672
-Node: Simple Classes99232
-Node: Class Instance103526
-Node: Methods104243
-Node: Method Type Descriptor106462
-Node: Member Type Descriptor107662
-Node: Protections108454
-Node: Method Modifiers111544
-Node: Virtual Methods113172
-Node: Inheritance116973
-Node: Virtual Base Classes120669
-Node: Static Members122913
-Node: Stab Types123383
-Node: Non-Stab Symbol Types124007
-Node: Stab Symbol Types125438
-Node: Symbol Descriptors129369
-Node: Type Descriptors132148
-Node: Expanded Reference135360
-Node: N_PC136778
-Node: N_NSYMS137146
-Node: N_NOMAP137387
-Node: N_M2C137693
-Node: N_BROWS138127
-Node: N_DEFD138410
-Node: N_EHDECL138867
-Node: N_MOD2139118
-Node: N_CATCH139356
-Node: N_SSYM139850
-Node: N_SCOPE140135
-Node: Gould140325
-Node: N_LENG141317
-Node: Questions141545
-Node: Stab Sections143189
-Node: Stab Section Basics143787
-Node: ELF Linker Relocation147128
-Node: GNU Free Documentation License150538
-Node: Symbol Types Index172972
+Node: Top1620
+Node: Overview2667
+Node: Flow4082
+Node: Stabs Format5608
+Node: String Field7170
+Node: C Example12601
+Node: Assembly Code13146
+Node: Program Structure15117
+Node: Main Program15843
+Node: Source Files16404
+Node: Include Files18856
+Node: Line Numbers21521
+Node: Procedures23055
+Node: Nested Procedures28945
+Node: Block Structure30121
+Node: Alternate Entry Points31527
+Node: Constants32260
+Node: Variables35372
+Node: Stack Variables36060
+Node: Global Variables37761
+Node: Register Variables38917
+Node: Common Blocks39739
+Node: Statics40993
+Node: Based Variables43572
+Node: Parameters44957
+Node: Register Parameters46569
+Node: Local Variable Parameters48830
+Node: Reference Parameters51745
+Node: Conformant Arrays52365
+Node: Types53082
+Node: Builtin Types54029
+Node: Traditional Builtin Types55175
+Node: Traditional Integer Types55576
+Node: Traditional Other Types57884
+Node: Builtin Type Descriptors58798
+Node: Negative Type Numbers62298
+Node: Miscellaneous Types68653
+Node: Cross-References70539
+Node: Subranges72214
+Node: Arrays73453
+Node: Strings76678
+Node: Enumerations77740
+Node: Structures80125
+Node: Typedefs82832
+Node: Unions84156
+Node: Function Types85737
+Node: Macro define and undefine87319
+Node: Symbol Tables88896
+Node: Symbol Table Format89348
+Node: Transformations On Symbol Tables90796
+Node: Transformations On Static Variables92150
+Node: Transformations On Global Variables92886
+Node: Stab Section Transformations94129
+Node: Cplusplus95512
+Node: Class Names96095
+Node: Nested Symbols96840
+Node: Basic Cplusplus Types97686
+Node: Simple Classes99246
+Node: Class Instance103540
+Node: Methods104257
+Node: Method Type Descriptor106476
+Node: Member Type Descriptor107676
+Node: Protections108468
+Node: Method Modifiers111558
+Node: Virtual Methods113186
+Node: Inheritance116987
+Node: Virtual Base Classes120683
+Node: Static Members122927
+Node: Stab Types123397
+Node: Non-Stab Symbol Types124021
+Node: Stab Symbol Types125452
+Node: Symbol Descriptors129383
+Node: Type Descriptors132162
+Node: Expanded Reference135374
+Node: N_PC136792
+Node: N_NSYMS137160
+Node: N_NOMAP137401
+Node: N_M2C137707
+Node: N_BROWS138141
+Node: N_DEFD138424
+Node: N_EHDECL138881
+Node: N_MOD2139132
+Node: N_CATCH139370
+Node: N_SSYM139864
+Node: N_SCOPE140149
+Node: Gould140339
+Node: N_LENG141331
+Node: Questions141559
+Node: Stab Sections143203
+Node: Stab Section Basics143801
+Node: ELF Linker Relocation147142
+Node: GNU Free Documentation License150552
+Node: Symbol Types Index175709
 
 End Tag Table
