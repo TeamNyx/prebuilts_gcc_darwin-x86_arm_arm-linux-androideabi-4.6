@@ -2,9 +2,9 @@ Sources for this prebuilt toolchain can be downloaded from Android Opensource
 Project GIT repository git://android.googlesource.com/toolchain.
 
 Configure options:
-export CC="gcc -m32 -isystem /Developer/SDKs/MacOSX10.4u.sdk/usr/include -mmacosx-version-min=10.4 -Wno-format -Wno-deprecated-declarations"
-export CXX="g++ -m32 -isystem /Developer/SDKs/MacOSX10.4u.sdk/usr/include -mmacosx-version-min=10.4 -Wno-format -Wno-deprecated-declarations"
-export ABI=32
+export CC="gcc -m64 -isystem /Developer/SDKs/MacOSX10.4u.sdk/usr/include -mmacosx-version-min=10.4 -Wno-format -Wno-deprecated-declarations"
+export CXX="g++ -m64 -isystem /Developer/SDKs/MacOSX10.4u.sdk/usr/include -mmacosx-version-min=10.4 -Wno-format -Wno-deprecated-declarations"
+export ABI=64
 export LDFLAGS=-Wl,-syslibroot,/Developer/SDKs/MacOSX10.4u.sdk
 path/to/build/configure --target=arm-linux-androideabi \
     --host=i686-apple-darwin --build=i686-apple-darwin \
@@ -40,9 +40,9 @@ mpfr/ synced to
         Date:   Thu Nov 5 17:50:13 2009 -0800
 
 build/ synced to
-        commit 5ef7fa6f214e96660a9b16343fea904831e5e6e2
-        Author: Jing Yu <jingyu@google.com>
-        Date:   Wed Feb 15 16:03:22 2012 -0800
+	commit bdb501d14ede0c21cd6bd73699b01ec027637d5f
+	Author: Jing Yu <jingyu@google.com>
+	Date:   Fri Apr 20 15:18:24 2012 -0700
 
 expat/ synced to
 	commit 40172a0ae9d40a068f1e1a48ffcf6a1ccf765ed5

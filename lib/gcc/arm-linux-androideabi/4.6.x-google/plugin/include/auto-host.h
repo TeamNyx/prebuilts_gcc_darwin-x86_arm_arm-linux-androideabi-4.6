@@ -1086,7 +1086,7 @@
 
 /* Define if you have the iconv() function. */
 #ifndef USED_FOR_TARGET
-#define HAVE_ICONV 1
+/* #undef HAVE_ICONV */
 #endif
 
 
@@ -1556,7 +1556,7 @@
 
 /* Define as const if the declaration of iconv() needs const. */
 #ifndef USED_FOR_TARGET
-#define ICONV_CONST const
+/* #undef ICONV_CONST */
 #endif
 
 
@@ -1672,7 +1672,7 @@
 
 /* The size of `long', as computed by sizeof. */
 #ifndef USED_FOR_TARGET
-#define SIZEOF_LONG 4
+#define SIZEOF_LONG 8
 #endif
 
 
@@ -1690,7 +1690,7 @@
 
 /* The size of `void *', as computed by sizeof. */
 #ifndef USED_FOR_TARGET
-#define SIZEOF_VOID_P 4
+#define SIZEOF_VOID_P 8
 #endif
 
 
