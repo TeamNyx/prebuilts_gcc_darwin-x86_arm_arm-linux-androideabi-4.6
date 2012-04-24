@@ -20,9 +20,9 @@ gcc/ synced to
 	Date:   Mon Mar 26 11:12:29 2012 -0700
 
 binutils/ synced to
-	commit 7aead7b4e795dbe23e7d57d57ce5d208a8680d92
+	commit 4f7a86c0b53a80a21dae1015f6d6b857ed6e02ed
 	Author: Jing Yu <jingyu@google.com>
-	Date:   Thu Mar 22 11:03:37 2012 -0700
+	Date:   Mon Apr 9 10:57:02 2012 -0700
 
 gdb/ synced to
         commit d3fbc74c42021bf9d385a3d3b8813d0d91318137
